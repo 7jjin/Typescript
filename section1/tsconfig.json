@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",  // 컴파일 후 생성되는 js의 파일 버전(ESNext는 js의 최신버전)
+    "module": "ESNext",  // 모듈 시스템을 바꿀 수 있다.
+    "outDir": "dist",  // 생성될 js 파일들이 위치할 폴더
+    "strict": false,    // 타입 조절을 엄격하게 할것인지 아닌지
+    "moduleDetection": "force"  // 모듈 시스템을 개별로 나눈다.
+  },
+  "ts-node": {
+    "esm": true
+  },
+  "include": ["src"]  // src 하위의 모든 ts 파일을 js 파일로 일괄 처리한다.
+
+}
