@@ -1,48 +1,48 @@
 /*
-* 객체 타입간의 호환성
-* -> 어떤 객체 타입을 다른 객체타입으로 취급해도 괜찮은가?
-*/
+ * 객체 타입간의 호환성
+ * -> 어떤 객체 타입을 다른 객체타입으로 취급해도 괜찮은가?
+ */
 
 type Animal = {
-    name:string;
-    color:string;
-}
+  name: string;
+  color: string;
+};
 
 type Dog = {
-    name:string;
-    color:string;
-    bread:string;
-}
+  name: string;
+  color: string;
+  bread: string;
+};
 
-let animal : Animal ={
-    name:"기린",
-    color:"yellow",
-}
+let animal: Animal = {
+  name: "기린",
+  color: "yellow",
+};
 
 let dog: Dog = {
-    name:"돌돌이",
-    color:"brown",
-    bread:"진도",
-}
+  name: "돌돌이",
+  color: "brown",
+  bread: "진도",
+};
 
 animal = dog;
 
 type Book = {
-    name:string,
-    price:number
-}
+  name: string;
+  price: number;
+};
 type ProgrammingBook = {
-    name:string,
-    price:number,
-    skill:string,
-}
+  name: string;
+  price: number;
+  skill: string;
+};
 
-let book : Book;
+let book: Book;
 let programmingBook: ProgrammingBook = {
-    name:"한 입 크기로 잘라먹는 리액트",
-    price:33000,
-    skill:"reactjs",
-}
+  name: "한 입 크기로 잘라먹는 리액트",
+  price: 33000,
+  skill: "reactjs",
+};
 book = programmingBook;
 // programmingBook = book;
 
@@ -52,17 +52,16 @@ book = programmingBook;
  */
 
 let book2: Book = {
-    name:"한 입 크기로 잘라먹는 리액트",
-    price:33000,
-    // skill:"reactjs",
-}
-let book3:Book = programmingBook;
+  name: "한 입 크기로 잘라먹는 리액트",
+  price: 33000,
+  // skill:"reactjs",
+};
+let book3: Book = programmingBook;
 
-function func(book:Book){}
+function func(book: Book) {}
 func({
-    name:"한 입 크기로 잘라먹는 리액트",
-    price:33000,
-    // skill:"reactjs",
-})
+  name: "한 입 크기로 잘라먹는 리액트",
+  price: 33000,
+  // skill:"reactjs",
+});
 func(programmingBook);
-
