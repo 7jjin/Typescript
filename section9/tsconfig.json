@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "outDir": "dist",
+    "strict": true,
+    "moduleDetection": "force",
+    "allowJs": true // 자바스크립트 파일도 허용해라!
+  },
+  "ts-node": {
+    "esm": true
+  },
+  "include": ["src"]
+}
